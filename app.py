@@ -104,10 +104,10 @@ def index():
 
 @app.route('/predict' ,methods=['POST','GET'])
 def predict():
-    # input_string=request.form['text']
+    input_string=request.form['text']
     # # print('text: ',input_string)
-    # with open('static/ipynbFiles/classifier_10epochs_updated.pkl','rb') as file:
-    #     clf=pickle.load(file)
+    with open('static/ipynbFiles/classifier_10epochs_updated.pkl','rb') as file:
+        clf=pickle.load(file)
     
     # if any(c in input_string for c in match):
     #     prediction = [0]
