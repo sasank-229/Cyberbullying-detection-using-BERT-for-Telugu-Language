@@ -1,0 +1,7 @@
+Flask
+tqdm
+torch
+transformers
+pickle
+xgboost
+Gunicorn

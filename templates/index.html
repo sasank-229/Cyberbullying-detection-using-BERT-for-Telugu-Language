@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Bullying Detection using BERT in Telugu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <!-- <link rel="stylesheet" href="static/index.css"> -->
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">సైబర్ సురక్ష</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#model">Model</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="/static/images/room.jpg" id="room">
+        <img src="/static/images/girl2.png" id="girl">
+        <img src="/static/images/laptop.png" id="laptop">
+        <h2 id="text">Cyber Bullying Detection using <br> BERT for Telugu Language</h2>
+        <a href="#abstract" id="btn">Explore</a>
+        <img src="/static/images/word art.png" id="word_art">
+    </section>
+    
+    <div class="members" id="members">
+        <h5>Team</h5>
+        <h1 class="title">Our Team Members</h1>
+        <div class="total">
+            <div class="faculty">
+                <h3>T. Sri Lakshmi</h3>
+                <div class="detail">
+                    <img src="/static/images/sri_lakshmi_mam.jpeg" alt="">
+                    <div class="matter">
+                        <h1>Faculty <br> Guide</h1>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="mailto:tslakshmi@gmail.com" target="_blank"><img src="/static/images/email.png"></a>
+                    <a href="tel:+919866177492" target="_blank"><img src="/static/images/telephone.png"></a>
+                    <!-- <a href="https://www.linkedin.com/in/mutyala-sai-sasank-mallavalli-612272227" target="_blank"><img src="/static/images/linkedin.png"></a>
+                    <a href="https://www.github.com/sasank-229" target="_blank"><img src="/static/images/github-2.png"></a> -->
+                </div>
+            </div>
+            <div class="students">
+                <div class="student dharani">
+                    <h3>K Dharani Priya</h3>
+                    <div class="detail">
+                        <img src="/static/images/dharani.jpeg" alt="">
+                        <div class="matter">
+                            <h1>Team <br> Leader</h1>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="mailto:kothuridharanipriya@gmail.com" target="_blank"><img src="/static/images/email.png"></a>
+                    <a href="tel:+919550611328" target="_blank"><img src="/static/images/telephone.png"></a>
+                    <a href="https://www.linkedin.com/in/kothuri-dharani-priya-75a485238/" target="_blank"><img src="/static/images/linkedin.png"></a>
+                    <a href="https://github.com/KDHARANIPRIYA" target="_blank"><img src="/static/images/github-2.png"></a>
+                    </div>
+                </div>
+                <div class="student jahnavi">
+                    <h3>M. Savithri Jahnavi</h3>
+                    <div class="detail">
+                        <img src="/static/images/jahnavi.jpeg" alt="">
+                        <div class="matter">
+                            <h1>Team <br> Member</h1>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="mailto:jahnavimanchiraju10@gmail.com" target="_blank"><img src="/static/images/email.png"></a>
+                    <a href="tel:+916281874931" target="_blank"><img src="/static/images/telephone.png"></a>
+                    <a href="https://linkedin.com/in/sjahnavimanchiraju10" target="_blank"><img src="/static/images/linkedin.png"></a>
+                    <a href="https://github.com/MSJahnavi" target="_blank"><img src="/static/images/github-2.png"></a>
+                    </div>
+                </div>
+                <div class="student sasank">
+                    <h3>M. M. S. Sasank</h3>
+                    <div class="detail">
+                        <img src="/static/images/sasank.jpg" alt="">
+                        <div class="matter">
+                            <h1>Team <br> Member</h1>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="mailto:sasankmallavalli229@gmail.com" target="_blank"><img src="/static/images/email.png"></a>
+                    <a href="tel:+919121368199" target="_blank"><img src="/static/images/telephone.png"></a>
+                    <a href="https://www.linkedin.com/in/mutyala-sai-sasank-mallavalli-612272227" target="_blank"><img src="/static/images/linkedin.png"></a>
+                    <a href="https://www.github.com/sasank-229" target="_blank"><img src="/static/images/github-2.png"></a>
+                    </div>
+                </div>
+                <div class="student harshith">
+                    <h3>Harshith Dande</h3>
+                    <div class="detail">
+                        <img src="/static/images/harshith.jpeg" alt="">
+                        <div class="matter">
+                            <h1>Team <br> Member</h1>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="mailto:harshithcs28@gmail.com" target="_blank"><img src="/static/images/email.png"></a>
+                        <a href="tel:+919100854723" target="_blank"><img src="/static/images/telephone.png"></a>
+                        <a href="https://www.linkedin.com/in/harshithdande" target="_blank"><img src="/static/images/linkedin.png"></a>
+                        <a href="https://github.com/harshithdande28" target="_blank"><img src="/static/images/github-2.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="abstract">
+        <h1>Abstract</h1>
+        <div class="abstract_paper">
+            <p>The rapid proliferation of online communication has brought about new forms of interpersoal interaction, but it has also led to the emergence of cyberbullying, a harmful phenomenon that can deeply affect individuals' well-being. Using a variety of approaches and strategies, research on the identification of cyberbullying was conducted in several mixed and bilingual languages. <br> <br> Bullying is the use of force, coersion, hurtful teasing or threat, to abuse, aggressively dominate or intimidate. It is wrong deed in which the victim is harassed by receiving the derogatory / provocative / sensitive text messages by the bully. <br> <br> To address this issue, this study proposes a novel approach for cyberbullying detection utilizing the BERT (Bidirectional Encoder Representations from Transformers) model to detect Cyberbullying in Telugu Language content, which has demonstrated exceptional capabilities in different natural language processing tasks.</p>
+            <a href="https://drive.google.com/file/d/1nAKT0TOyWjqx3RERITvHfLzsr2I5sBKm/view?usp=sharing" target="_blank"><img src="/static/images/pdf_icon.png"></a>
+        </div>
+    </div>
+    <div class="model" id="model">
+        <div class="machine">
+            <img src="/static/images/top_border_model.png">
+            <h1>అంచనా</h1>
+            <h2>మీ తెలుగు వచనాన్ని నమోదు చేయండి: </h2>
+            <form action="/predict" method="POST">
+                <input type="text" name="text" placeholder="ఇక్కడ టైప్ చేయండి..." required>
+                <button class="registerButton" type="submit" value="Register" name="submit">నమోదు</button>
+            </form>
+            <p class="pre_text">అంచనా ఏమిటి అంటే: </p>
+            <!-- {{pred}} -->
+            <p class="question">{{question}}<br><br><big><b>{{pred}}</b></big></p>
+        </div>
+    </div>
+    <script>
+        let room = document.getElementById('room');
+        let girl = document.getElementById('girl');
+        let laptop = document.getElementById('laptop');
+        let word = document.getElementById('word_art');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            room.style.top=value * 0.3 + 'px';
+            word.style.top=value * 1.05 + 'px';
+            girl.style.left=value * -0.5 + 'px';
+            laptop.style.left =value * 0.35 + 'px';
+            text.style.marginRight = value * 6 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
