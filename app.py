@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template,url_for, current_app, abort
+from flask import Flask, request, render_template,url_for
 from tqdm import tqdm
 import numpy as np
 # import nbformat
@@ -13,14 +13,14 @@ app = Flask(__name__)
 
 # Load the model during the application startup
 # @before_first_request
-def load_model():
-    try:
-        with open('static/ipynbFiles/classifier2.pkl', 'rb') as file:
-            current_app.clf = pickle.load(file)
-    except Exception as e:
-        print(f"Error loading model: {str(e)}")
-        abort(500)  # Internal Server Error
-app.before_first_request(load_model)
+# def load_model():
+#     try:
+#         with open('static/ipynbFiles/classifier2.pkl', 'rb') as file:
+#             current_app.clf = pickle.load(file)
+#     except Exception as e:
+#         print(f"Error loading model: {str(e)}")
+#         abort(500)  # Internal Server Error
+# app.before_first_request(load_model)
 
 def model_extract(input_string):
     param ={'maxLen' :256,}
