@@ -109,12 +109,12 @@ def predict():
     with open('static/ipynbFiles/classifier_10epochs_updated.pkl','rb') as file:
         clf=pickle.load(file)
     
-    # if any(c in input_string for c in match):
-    #     prediction = [0]
-    # else:
-    #     ans=model_extract(input_string)
-    #     print('torch.tensor variable: ',ans)
-    #     prediction = clf.predict(ans)
+    if any(c in input_string for c in match):
+        prediction = [0]
+    else:
+        ans=model_extract(input_string)
+        print('torch.tensor variable: ',ans)
+        prediction = clf.predict(ans)
 
     # # print('prediction=',prediction)
     # if prediction==[0]:
