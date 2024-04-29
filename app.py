@@ -73,11 +73,11 @@ def model_extract(input_string):
         attention_masks_data = torch.tensor(attention_masks_data)
         y_data = torch.tensor(label)
 
-        return X_data, attention_masks_data, y_data 
+        return X_data#,attention_masks_data,y_data 
     
     text_input=input_string
     label_input = [0]
-    X_data, attention_masks_data, y_data = getFeaturesandLabel(text_input, label_input)
+    X_data= getFeaturesandLabel(text_input, label_input)
     return X_data
 
 
