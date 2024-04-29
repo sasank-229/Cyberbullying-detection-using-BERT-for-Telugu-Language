@@ -5,7 +5,7 @@ import numpy as np
 # from nbconvert import PythonExporter
 # import os
 import torch
-from transformers import BertTokenizer
+from transformers import BertTokenizer,AutoTokenizer
 import pickle
 from xgboost import XGBClassifier
 
