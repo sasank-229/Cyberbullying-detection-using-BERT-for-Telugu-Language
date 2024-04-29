@@ -25,8 +25,8 @@ app = Flask(__name__)
 def model_extract(input_string):
     param ={'maxLen' :256,}
     # model = AutoModel.from_pretrained("ai4bharat/indic-bert")
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    # tokenizer = AutoTokenizer.from_pretrained("ai4bharat/indic-bert")
+    # tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    tokenizer = AutoTokenizer.from_pretrained("ai4bharat/indic-bert")
 
     def pad_sequences(sequences, maxlen=None, dtype='int32', padding='pre', truncating='pre', value=0.0):
         padded_sequences = []
