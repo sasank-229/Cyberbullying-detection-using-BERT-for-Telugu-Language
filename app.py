@@ -26,8 +26,7 @@ def model_extract(input_string):
     param ={'maxLen' :256,}
     # model = AutoModel.from_pretrained("ai4bharat/indic-bert")
     # tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    from transformers import AutoTokenizer
-    tokenizer = AutoTokenizer.from_pretrained("ai4bharat/indic-bert")
+    
 
     def pad_sequences(sequences, maxlen=None, dtype='int32', padding='pre', truncating='pre', value=0.0):
         padded_sequences = []
@@ -62,6 +61,8 @@ def model_extract(input_string):
         # Wrap the single string in a list
         sentences = ["[CLS] " + single_string + " [SEP]"]
 
+        from transformers import AutoTokenizer
+        tokenizer = AutoTokenizer.from_pretrained("ai4bharat/indic-bert")
         # Tokenize and preprocess
         tokenizer_texts = list(map(lambda t: tokenizer.tokenize(t)[:512], tqdm(sentences)))
         input_ids = [tokenizer.convert_tokens_to_ids(x) for x in tqdm(tokenizer_texts)]
