@@ -111,8 +111,8 @@ def predict():
     
     if any(c in input_string for c in match):
         prediction = [0]
-    # else:
-    #     ans=model_extract(input_string)
+    else:
+        ans=model_extract(input_string)
     #     print('torch.tensor variable: ',ans)
     #     prediction = clf.predict(ans)
 
