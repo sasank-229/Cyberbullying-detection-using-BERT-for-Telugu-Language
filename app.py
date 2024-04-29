@@ -117,11 +117,11 @@ def predict():
     #     prediction = clf.predict(ans)
 
     # # print('prediction=',prediction)
-    # if prediction==[0]:
-    #     return render_template('index.html', pred='Cyberbullying Text', question='వాక్యం -   '+input_string)
-    # else:
-    #     return render_template('index.html', pred='Non-Cyberbullying Text', question='వాక్యం -   '+input_string)
-    return render_template('index.html')
+    if prediction==[0]:
+        return render_template('index.html', pred='Cyberbullying Text', question='వాక్యం -   '+input_string)
+    else:
+        return render_template('index.html', pred='Non-Cyberbullying Text', question='వాక్యం -   '+input_string)
+    # return render_template('index.html')
 
 #for creating a pickle file: 
 #   with open('classifier.pkl','wb') as file:
