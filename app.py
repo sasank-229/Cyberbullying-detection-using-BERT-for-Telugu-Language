@@ -5,7 +5,7 @@ import numpy as np
 # from nbconvert import PythonExporter
 # import os
 import torch
-from transformers import BertTokenizer,AutoTokenizer
+# from transformers import BertTokenizer,AutoTokenizer
 import pickle
 from xgboost import XGBClassifier
 
@@ -26,6 +26,7 @@ def model_extract(input_string):
     param ={'maxLen' :256,}
     # model = AutoModel.from_pretrained("ai4bharat/indic-bert")
     # tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    from transformers import AutoTokenizer
     tokenizer = AutoTokenizer.from_pretrained("ai4bharat/indic-bert")
 
     def pad_sequences(sequences, maxlen=None, dtype='int32', padding='pre', truncating='pre', value=0.0):
