@@ -115,7 +115,7 @@ def predict():
     else:
         ans=model_extract(input_string)
     #     print('torch.tensor variable: ',ans)
-    #     prediction = clf.predict(ans)
+        prediction = clf.predict(ans)
 
     # # print('prediction=',prediction)
     if prediction==[0]:
